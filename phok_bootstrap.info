@@ -1,31 +1,31 @@
-name = 'THEMETITLE'
-description = Uses the Bootstrap Framework Sass source files and must be compiled (not for beginners).
+name = 'PHOK Platform Bootstrap Theme'
+description = Uses the Bootstrap Framework Sass source files and must be compiled.
 core = 7.x
 base theme = bootstrap
-
 
 ;;;;;;;;;;;;;;;;;;;;;
 ;; Regions
 ;;;;;;;;;;;;;;;;;;;;;
 
-regions[navigation]     = 'Navigation'
-regions[header]         = 'Top Bar'
-regions[highlighted]    = 'Highlighted'
-regions[help]           = 'Help'
-regions[content]        = 'Content'
-regions[sidebar_first]  = 'Primary'
-regions[sidebar_second] = 'Secondary'
-regions[footer]         = 'Footer'
-regions[page_top]       = 'Page top'
-regions[page_bottom]    = 'Page bottom'
-
+regions[header]          = 'Top Bar'
+regions[navigation]      = 'Navigation'
+regions[highlighted]     = 'Highlighted area'
+regions[help]            = 'Help area'
+regions[content]         = 'Content region'
+regions[sidebar_first]   = 'Primary sidebar'
+regions[sidebar_second]  = 'Secondary sidebar'
+regions[triptych_left]   = 'Left Triptych'
+regions[triptych_center] = 'Center Triptych'
+regions[triptych_right]  = 'Left Triptych'
+regions[footer]          = 'Footer'
+regions[page_top]        = 'Page top'
+regions[page_bottom]     = 'Page bottom'
 
 ;;;;;;;;;;;;;;;;;;;;;
 ;; Stylesheets
 ;;;;;;;;;;;;;;;;;;;;;
 
 stylesheets[all][] = css/style.css
-
 
 ;;;;;;;;;;;;;;;;;;;;;
 ;; Scripts
