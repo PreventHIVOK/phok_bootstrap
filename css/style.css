@@ -8680,7 +8680,7 @@ html {
 }
 
 @media screen and (min-width: 768px) {
-  #navbar.navbar-brand {
+  #navbar .navbar-brand {
     display: none;
   }
 }

@@ -8,7 +8,7 @@ html {
 }
 
 #navbar {
-  &.navbar-brand {
+  .navbar-brand {
     @media #{$tablet} {
       display: none;
     }
