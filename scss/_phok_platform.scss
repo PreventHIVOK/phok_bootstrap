@@ -1,6 +1,16 @@
 /**
  * PHOK Platform theme CSS for Bootstrap
  */
+@import "https://code.cdn.mozilla.net/fonts/fira.css";
+
 html {
   font-family: "Fira Sans";
+}
+
+#navbar {
+  &.navbar-brand {
+    @media #{$tablet} {
+      display: none;
+    }
+  }
 }
