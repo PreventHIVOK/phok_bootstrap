@@ -1,7 +1,7 @@
 // Media query variables.
 $tablet:  "screen and (min-width: 768px)";
-$normal:  "screen and (min-width: 992px)";
-$wide:    "screen and (min-width: 1200px)";
+$normal:  "screen and (min-width: 1200px)";
+$wide:    "screen and (min-width: 1600px)";
 
 // Drop shadows.
 @mixin box-shadow($shadow) {

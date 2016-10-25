@@ -165,8 +165,40 @@
   </div>
 </div>
 
-<?php if (!empty($page['footer'])): ?>
-  <footer class="footer <?php print $container_class; ?>">
+<?php if (!empty($page['footer']) || !empty($page['triptych_left']) || !empty($page['triptych_center']) || !empty($page['triptych_right'])): ?>
+<!-- Footer section -->
+<footer id="footer" class="footer <?php print $container_class; ?>">
+  <?php if (!empty($page['triptych_left']) || !empty($page['triptych_center']) || !empty($page['triptych_right'])): ?>
+  <!-- Footer triptych-->
+  <div id="triptych" class="row">
+    <?php if (!empty($page['triptych_left'])): ?>
+    <!-- Triptych: Left panel -->
+    <section id="triptych-left" class="col-sm-6 col-md-4">
+      <?php print render($page['triptych_left']); ?>
+    </section>
+    <?php endif; ?>
+
+    <?php if (!empty($page['triptych_center'])): ?>
+    <!-- Triptych: Center panel -->
+    <section id="triptych-center" class="col-sm-6 col-md-4">
+      <?php print render($page['triptych_center']); ?>
+    </section>
+    <?php endif; ?>
+
+    <?php if (!empty($page['triptych_right'])): ?>
+    <!-- Triptych: Center panel -->
+    <section id="triptych-right" class="col-sm-12 col-md-4">
+      <?php print render($page['triptych_right']); ?>
+    </section>
+    <?php endif; ?>
+  </div>
+  <?php endif; ?>
+
+  <?php if (!empty($page['footer'])): ?>
+  <!-- Footer section-->
+  <div class="row">
     <?php print render($page['footer']); ?>
-  </footer>
+  </div>
+  <?php endif; ?>
+</footer>
 <?php endif; ?>
